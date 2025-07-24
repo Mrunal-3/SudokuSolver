@@ -1,0 +1,82 @@
+## 📘 Project Introduction – **Sudoku Solver in Java**
+
+### 🔍 What is Sudoku?
+
+Sudoku is a popular logic-based, combinatorial number-placement puzzle. The standard version is played on a 9×9 grid, divided into nine 3×3 subgrids. The objective is to fill the grid so that each row, each column, and each 3×3 subgrid contains all the digits from 1 to 9, without repetition.
+
+---
+
+### 🎯 Objective of the Project
+
+The main goal of this project is to **automate the process of solving Sudoku puzzles** using a **backtracking algorithm** in Java. The program reads an unsolved Sudoku board, processes it, and displays the solved version.
+
+It demonstrates the use of **recursion, object-oriented programming, 2D array manipulation**, and **logical problem-solving techniques** in Java.
+
+---
+
+### 🧱 How the Project is Structured
+
+The project is divided into two main Java classes:
+
+#### 1. `Sudoku.java` – Core Logic Class
+
+* Contains the 9x9 board.
+* Implements the **backtracking algorithm** to solve the puzzle.
+* Contains utility methods to:
+
+  * Check if placing a number is valid (`isValid`)
+  * Find the next empty cell
+  * Solve the puzzle recursively (`solveSudoku`)
+  * Print the board (`printBoard`)
+
+#### 2. `App.java` – Entry Point
+
+* Contains the `main()` method.
+* Initializes the board with a sample puzzle.
+* Calls the `solveSudoku` method.
+* Displays the original and solved board.
+
+---
+
+### 🧠 Why This Project?
+
+This project was chosen because Sudoku is:
+
+* A **classic problem** that tests logic and constraint satisfaction.
+* A **perfect application** of recursive backtracking in programming.
+* Great for **practicing algorithms, data structures (2D arrays), and OOP**.
+
+Solving Sudoku computationally also enhances:
+
+* Understanding of control flow
+* Debugging recursive functions
+* Writing clean, modular code
+
+---
+
+### 🧩 Algorithm Used – Backtracking
+
+Backtracking is a form of recursion that tries all possible options and “backtracks” if it hits a dead-end.
+
+In this Sudoku solver:
+
+* The algorithm finds the next empty cell (value `0`).
+* It tries placing numbers from 1 to 9.
+* If the placement is valid, it proceeds recursively.
+* If no number fits, it **backtracks**, resetting the cell to `0` and trying again.
+
+This continues until:
+
+* The board is completely filled with valid numbers, or
+* It determines that the puzzle is unsolvable.
+
+---
+
+### 💬 Use Cases
+
+* Logic puzzle apps
+* Game development backend
+* Educational tools for algorithm visualization
+* Interview prep for recursion and backtracking
+
+---
